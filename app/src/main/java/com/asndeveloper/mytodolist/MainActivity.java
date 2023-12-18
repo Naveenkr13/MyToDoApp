@@ -9,16 +9,14 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.Collections;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements  DialogCloseListener {
-    AdView adView;
+
     private DBHelper db;
     private AdapterForToDo adapter;
     private RecyclerView recyclerView_task;
@@ -32,15 +30,14 @@ public class MainActivity extends AppCompatActivity implements  DialogCloseListe
 //        getSupportActionBar().hide();
         db=new DBHelper(this);
         db.OpenDatabase();
-        adView=findViewById(R.id.adview);
+
         recyclerView_task=findViewById(R.id.RecylcerViewtask);
         floatButton=findViewById(R.id.floatbtn);
 
 
         //banner id
-        MobileAds.initialize(this);
-        AdRequest adRequest=new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+
+
         //banner id
         //recycler
         recyclerView_task.setLayoutManager(new LinearLayoutManager(this));

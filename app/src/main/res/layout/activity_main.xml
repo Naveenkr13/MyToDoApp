@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     tools:context=".MainActivity">
-    <com.google.android.gms.ads.AdView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#B9B7B7"
-        android:id="@+id/adview"
-        app:adUnitId="@string/banner_id"
-        app:adSize="BANNER"
-        android:layout_alignParentBottom="true"
-        />
-
     <TextView
         android:id="@+id/headingTitle"
         android:layout_width="match_parent"
