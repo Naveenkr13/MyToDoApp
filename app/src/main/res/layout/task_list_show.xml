@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="@dimen/_12sdp"
+    android:layout_marginHorizontal="@dimen/_18sdp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    android:elevation="@dimen/_6sdp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp"
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox"
+            android:buttonTint="#35BD3A"
+            android:text="Thid is Sample Task"
+
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

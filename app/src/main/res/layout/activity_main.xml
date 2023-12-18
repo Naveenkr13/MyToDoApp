@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B9B7B7"
+        android:id="@+id/adview"
+        app:adUnitId="@string/banner_id"
+        app:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/headingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:fontFamily="@font/akronim"
+
+        android:gravity="center"
+        android:text="@string/head"
+        android:textColor="#68CFBD"
+        android:textSize="@dimen/_42sdp"
+        android:textStyle="bold" />
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/headingTitle"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    android:nestedScrollingEnabled="true"
+    android:id="@+id/RecylcerViewtask"
+    >
+
+</androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floatbtn"
+        android:backgroundTint="#68CFBD"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_55sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:src="@drawable/baseline_add_24"
+        />
+</RelativeLayout>
